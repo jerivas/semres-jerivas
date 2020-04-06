@@ -36,5 +36,6 @@ setup(
     keywords="semantic release",
     packages=find_packages(),
     install_requires=[],
+    extras_require={"testing": ["flake8>=3,<4", "pytest>=4,<6"]},
     include_package_data=True,
 )
