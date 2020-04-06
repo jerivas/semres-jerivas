@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: '12.x'
       - name: Generate changelog and tag
-      - run: |
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           npx standard-version
