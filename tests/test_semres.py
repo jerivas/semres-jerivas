@@ -3,8 +3,12 @@ import pytest
 from semres import hello, goodbye
 
 
-def test_hello():
-    assert hello() == "Hello world!"
+@pytest.mark.parametrize(
+    "input,expected",
+    [(0, "Hello world! 0"), ("mary", "Hello world! mary"), (None, "Hello world! ")],
+)
+def test_hello(input, expected):
+    assert hello(input) == expected
 
 
 @pytest.mark.parametrize(
