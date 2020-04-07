@@ -1,9 +1,8 @@
 name: Release to PyPI
 
+# Only fire on new tags that match semver
 on:
-  push:
-    branches:
-      - release
+  create:
     tags:
       - v[0-9]+.[0-9]+.[0-9]+
 
