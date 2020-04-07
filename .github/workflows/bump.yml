@@ -10,7 +10,6 @@ jobs:
 
   # Bump version, generate changelog, and create tags
   tag:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
