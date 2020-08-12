@@ -1,6 +1,6 @@
 from django.template.defaultfilters import yesno
 
-MSG = 3
+MSG = 4
 
 
 def hello(count=0):
