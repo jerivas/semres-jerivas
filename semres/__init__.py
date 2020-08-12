@@ -1,5 +1,7 @@
 from django.template.defaultfilters import yesno
 
+__version__ = "0.0.dev0"  # DO NOT EDIT: Updated automatically
+
 MSG = 4
 
 
