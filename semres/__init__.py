@@ -1,6 +1,9 @@
+MSG = 3
+
+
 def hello(count=0):
-    return "Hello world 3! {}".format(count)
+    return "Hello world {}! {}".format(MSG, count)
 
 
 def goodbye(name="Joe"):
-    return "Goodbye 3 {}".format(name)
+    return "Goodbye {} {}".format(MSG, name)
