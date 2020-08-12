@@ -1,4 +1,3 @@
-
 def hello(count=0):
     return "Hello world! {}".format(count)
 
