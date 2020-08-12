@@ -6,9 +6,9 @@ from semres import hello, goodbye
 @pytest.mark.parametrize(
     "x,out",
     [
-        (0, "Hello world 2! 0"),
-        ("mary", "Hello world 2! mary"),
-        (None, "Hello world 2! None"),
+        (0, "Hello world 3! 0"),
+        ("mary", "Hello world 3! mary"),
+        (None, "Hello world 3! None"),
     ],
 )
 def test_hello(x, out):
