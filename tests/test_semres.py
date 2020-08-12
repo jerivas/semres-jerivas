@@ -1,6 +1,6 @@
 import pytest
 
-from semres import hello, goodbye
+from semres import hello, goodbye, my_yesno
 
 
 @pytest.mark.parametrize(
@@ -20,3 +20,16 @@ def test_hello(x, out):
 )
 def test_goodbye(x, out):
     assert goodbye(x) == out
+
+
+@pytest.mark.parametrize(
+    "x,y,out",
+    [
+        (True, "", True),
+        (False, "", False),
+        (True, "yay,nay", "yay"),
+        (False, "yay,nay", "nay"),
+    ],
+)
+def test_yesno(x, y, out):
+    assert my_yesno(x, y) == out
