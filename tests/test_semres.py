@@ -4,15 +4,17 @@ from semres import hello, goodbye
 
 
 @pytest.mark.parametrize(
-    "input,expected",
-    [(0, "Hello world! 0"), ("mary", "Hello world! mary"), (None, "Hello world! None")],
+    "x,out",
+    [
+        (0, "Hello world 2! 0"),
+        ("mary", "Hello world 2! mary"),
+        (None, "Hello world 2! None"),
+    ],
 )
-def test_hello(input, expected):
-    assert hello(input) == expected
+def test_hello(x, out):
+    assert hello(x) == out
 
 
-@pytest.mark.parametrize(
-    "input,expected", [("joe", "Goodbye joe"), ("mary", "Goodbye mary")]
-)
-def test_goodbye(input, expected):
-    assert goodbye(input) == expected
+@pytest.mark.parametrize("x,out", [("joe", "Goodbye joe"), ("mary", "Goodbye mary")])
+def test_goodbye(x, out):
+    assert goodbye(x) == out

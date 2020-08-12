@@ -1,5 +1,5 @@
 def hello(count=0):
-    return "Hello alpha world! {}".format(count)
+    return "Hello world 2! {}".format(count)
 
 
 def goodbye(name="Joe"):
