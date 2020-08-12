@@ -3,4 +3,4 @@ def hello(count=0):
 
 
 def goodbye(name="Joe"):
-    return "Goodbye {}".format(name)
+    return "Goodbye 3 {}".format(name)
