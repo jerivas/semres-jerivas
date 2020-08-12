@@ -6,9 +6,9 @@ from semres import hello, goodbye, my_yesno
 @pytest.mark.parametrize(
     "x,out",
     [
-        (0, "Hello world 4! 0"),
-        ("mary", "Hello world 4! mary"),
-        (None, "Hello world 4! None"),
+        (0, "Hello world 5! 0"),
+        ("mary", "Hello world 5! mary"),
+        (None, "Hello world 5! None"),
     ],
 )
 def test_hello(x, out):
@@ -16,7 +16,7 @@ def test_hello(x, out):
 
 
 @pytest.mark.parametrize(
-    "x,out", [("joe", "Goodbye 4 joe"), ("mary", "Goodbye 4 mary")]
+    "x,out", [("joe", "Goodbye 5 joe"), ("mary", "Goodbye 5 mary")]
 )
 def test_goodbye(x, out):
     assert goodbye(x) == out
